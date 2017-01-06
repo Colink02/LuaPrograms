@@ -6,5 +6,3 @@ local delay = 1
 --how long before next check
 
 while true do 
-  computer.pushsignal(COM1)
-  computer.pullsignal(COMR1)
