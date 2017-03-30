@@ -6,9 +6,9 @@ local m = component.modem
 
 while true do
 
- local _, remoteAddress, port, payload = event.pull("modem_message")
+ local _, _, from, port, _, message = event.pull("modem_message")
  file = io.open("event.txt", "a")
  io.output(file)
- io.write("Received data '" .. tostring(payload) .. "' from address " .. remoteAddress .." on port " .. port .. ".")
+ io.write("Got a message from " .. from .. " on port " .. port .. ": " .. tostring(message.."\n"))
  io.close(file)
 end
