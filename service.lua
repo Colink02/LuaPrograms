@@ -2,11 +2,11 @@ local c = require("computer")
 local com = require("component")
 local t = com.tunnel
 local r = com.br_reactor
-local start = false
+local is_running = false
 local tmp = " "
 local message = "temp"
 
-function start(start)
+function start(is_running)
 start = true
   while start do
     if message == tmp then
@@ -19,8 +19,8 @@ start = true
   end
 end
 
-function stop(start)
-  start = false
+function stop(is_running)
+  is_running = false
   
-  return start
+  return is_running
 end
