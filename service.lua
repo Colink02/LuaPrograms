@@ -7,7 +7,7 @@ local tmp = " "
 local message = "temp"
 
 function start()
-start = true
+is_running = true
   while start do
     if message == tmp then
       mess = r.getactive()
