@@ -3,8 +3,6 @@ local com = require("component")
 local t = com.tunnel
 local r = com.br_reactor
 local last_message = nil
-local tmp = " "
-local message = "temp"
 local timer_id = nil
 
 local function service_callback() 
