@@ -18,15 +18,7 @@ end
     
     
 function start() if timer_id then
-is_running = true
-  while start do
-    if message == tmp then
-      mess = r.getactive()
-      
-    else
-      t.send(message)
-      message = r.getactive()
-      
+   return
     end
  os.sleep(0)
   end
