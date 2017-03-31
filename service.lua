@@ -16,6 +16,7 @@ is_running = true
       message = r.getactive()
       t.send(message)
     end
+ os.sleep(0)
   end
 end
 
