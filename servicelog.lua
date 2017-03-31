@@ -1,6 +1,6 @@
 local c = require("computer")
 local com = require("component")
-local m = com.modem
+local t = com.tunnel
 local file = log.txt
 while true do 
   local message = event.pull("modem_message")
