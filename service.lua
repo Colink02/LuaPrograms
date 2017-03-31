@@ -13,8 +13,9 @@ is_running = true
       mess = r.getactive()
       
     else
-      message = r.getactive()
       t.send(message)
+      message = r.getactive()
+      
     end
  os.sleep(0)
   end
