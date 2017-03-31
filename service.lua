@@ -1,4 +1,5 @@
 local c = require("computer")
+local event = require("event")
 local com = require("component")
 local t = com.tunnel
 local r = com.br_reactor
