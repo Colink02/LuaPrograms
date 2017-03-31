@@ -19,13 +19,11 @@ end
     
 function start() if timer_id then
    return
-    end
- os.sleep(0)
   end
+timer_id = event.timer(1, service_callback, math.huge) 
 end
 
-function stop()
-  is_running = false
-  
-  return is_running
+function stop() if timer_id then 
+  event.ignore(timer_id) timer_id = nil
+  end
 end
