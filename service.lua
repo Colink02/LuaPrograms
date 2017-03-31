@@ -22,6 +22,6 @@ timer_id = event.timer(1, service_callback, math.huge)
 end
 
 function stop() if timer_id then 
-  event.ignore(timer_id) timer_id = nil
+  event.cancel(timer_id) timer_id = nil
   end
 end
