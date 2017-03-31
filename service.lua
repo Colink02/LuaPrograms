@@ -17,12 +17,14 @@ end
     
     
 function start() if timer_id then
+    print("[ColinksSmartServices] Started")
    return
    end
 timer_id = event.timer(1, service_callback, math.huge) 
 end
 
 function stop() if timer_id then 
+    print("[ColinksSmartServices] Stopping')
   event.cancel(timer_id) timer_id = nil
   end
 end
