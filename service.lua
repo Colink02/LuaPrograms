@@ -18,6 +18,7 @@ end
     
 function start() if timer_id then
    return
+   end
 timer_id = event.timer(1, service_callback, math.huge) 
 end
 
