@@ -6,7 +6,7 @@ local is_running = false
 local tmp = " "
 local message = "temp"
 
-function start(is_running)
+function start()
 start = true
   while start do
     if message == tmp then
@@ -19,7 +19,7 @@ start = true
   end
 end
 
-function stop(is_running)
+function stop()
   is_running = false
   
   return is_running
