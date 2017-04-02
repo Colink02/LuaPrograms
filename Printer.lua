@@ -5,7 +5,7 @@ local LightLevel = pd.getlightlevel
 local buttonMode = pd.isButtonMode()
 
 print("what file will this save to?")
-local file = io.read("*line")
+file = io.read("*line")
 io.open(file, w)
 io.output(file)
 
