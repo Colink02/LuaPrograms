@@ -26,6 +26,7 @@ if input == "button on" then
     end
 end
 if input == "button off" then 
+  if buttonMode
   
   
 
