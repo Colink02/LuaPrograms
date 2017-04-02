@@ -1,8 +1,8 @@
 local c = require("computer")
 local com = require("component")
-local 3d = com.printer3d
-local LightLevel = 3d.getlightlevel
-local buttonMode = 3d.isButtonMode()
+local pd = com.printer3d
+local LightLevel = pd.getlightlevel
+local buttonMode = pd.isButtonMode()
 
 print("what file will this save to?")
 local file = io.read()
