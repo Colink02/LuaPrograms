@@ -9,12 +9,11 @@ file = io.read()
 io.open(file, w)
 io.output(file)
 
-while true do
-  
 function readinput()
 print("type help for a list of commands")
 input = io.read()
 end 
+while true do
 
 if input == "lightlevel" then
   print("Block light level will be"..LightLevel)
@@ -35,6 +34,7 @@ if input == "button off" then
     print("Turning off Block Button Mode")
     io.write("setButtonMode(false)")
   end
+  if input == "
 
 readinput()
 end
