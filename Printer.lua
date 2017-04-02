@@ -18,9 +18,12 @@ if input == "lightlevel" then
   print("Block light level will be"..LightLevel)
 end
 if input == "button on" then
-    if buttonMode == "
+    if buttonMode == "on" then
+      print("already turned on")
+    else
   print("Turning on Block Button Mode")
   io.write("setButtonMode(true)")
+    end
 end
 if input == "button off" then 
   
