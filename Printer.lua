@@ -5,14 +5,14 @@ local LightLevel = pd.getlightlevel
 local buttonMode = pd.isButtonMode()
 
 print("what file will this save to?")
-local file = io.read()
+local file = io.read("*line")
 io.open(file, w)
 io.output(file)
 
 while true do
 function readinput()
 print("type help for a list of commands")
-input = io.read()
+input = io.read("*line")
 end 
 
 if input == "lightlevel" then
