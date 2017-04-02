@@ -1,14 +1,15 @@
 local c = require("computer")
 local com = require("component")
-local 3d = component.printer3d
+local 3d = com.printer3d
 local LightLevel = 3d.getlightlevel
 local buttonMode = 3d.isButtonMode()
 
 print("what file will this save to?")
 local file = io.read()
-io.open(file, a)
+io.open(file, w)
 io.output(file)
 
+while true do
 function readinput()
 print("type help for a list of commands")
 input = io.read()
@@ -26,8 +27,13 @@ if input == "button on" then
     end
 end
 if input == "button off" then 
-  if buttonMode
-  
-  
+  if buttonMode == "off" then
+    print("Already off")
+  end
+  else
+    print("Turning off Block Button Mode")
+    io.write("setButtonMode(false)")
+  end
 
 readinput()
+end
