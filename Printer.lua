@@ -34,7 +34,12 @@ if input == "button off" then
     print("Turning off Block Button Mode")
     io.write("setButtonMode(false)")
   end
-  if input == "
+if input == "emitRedstone on" then
+    print("Turning on emitRedstone")
+  if input == "help" then
+    print("lightlevel: shows what the blocks light level is")
+    print("button on:off | turn button mode on or off")
+    print("emitRedstone on:off | add redstone mode to the block adds or deletes buttonMode as well")
 
 readinput()
 end
