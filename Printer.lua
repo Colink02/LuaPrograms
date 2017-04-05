@@ -40,6 +40,7 @@ if input == "emitRedstone on" then
     print("lightlevel: shows what the blocks light level is")
     print("button on:off | turn button mode on or off")
     print("emitRedstone on:off | add redstone mode to the block adds or deletes buttonMode as well")
+    print("start | Begins printing custom block")
 
 readinput()
 end
