@@ -1,12 +1,11 @@
 local c = require("computer")
 local com = require("component")
-local cran = require("ColinsRandomStringGen")
+local res = require("PrinterResources")
 local pd = com.printer3d
 local LightLevel = pd.getlightlevel
 local buttonMode = pd.isButtonMode()
 
-rnd = math.random(1304823)
-file = rnd..".lua"
+file = io.tmpfile()
 print("This session will be saved to "..file.."Reset in config")
 io.open(file, w)
 io.output(file)
@@ -18,12 +17,7 @@ end
 while true do
 --help
     if input == "help" then
-    print("lightlevel: shows what the blocks light level is")
-    print("button on:off | turn button mode on or off")
-    print("emitRedstone on:off | add redstone mode to the block adds or deletes buttonMode as well")
-    print("start | Begins printing custom block")
- end
-  --end of if "help"
+            res.help()
 if input == "lightlevel" then
   print("Block light level will be"..LightLevel)
 end
@@ -46,6 +40,7 @@ if input == "button off" then
 if input == "emitRedstone on" then
     print("Turning on emitRedstone")
 end
-if input == "
+if input == "save" then 
+        
 break
 return readinput()
